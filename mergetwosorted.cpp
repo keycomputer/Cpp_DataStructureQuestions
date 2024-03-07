@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int main()
 {
     int arr1[] = {5,8,10,26,36}, arr2[]={4,8,15, 40};
