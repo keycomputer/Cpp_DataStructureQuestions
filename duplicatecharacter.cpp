@@ -23,7 +23,13 @@ int main()
     cin>>name;
     unordered_map<char, int> m1; // key -> first , Value -> second 
     for(int i=0;i<name.length();i++)
-        m1[name[i]]++;
+//        m1[name[i]]++; /// name[i] -> alphabet -> ASCII  -> Key of M1 (Value increase by 1)
+    {
+        if (m1.count(name[i]) == 0 )
+            m1[name[i]] = 1 ;  // insert 
+        else
+            m1[name[i]]  = m1[name[i]] + 1;  // Value increase 
+    }
     for(auto i : m1) // for next 
     {
         if(i.second > 1)
